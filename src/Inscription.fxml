@@ -5,15 +5,16 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inscription">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inscription">
    <children>
-      <Label layoutX="71.0" layoutY="50.0" text="Nom">
+      <Label layoutX="71.0" layoutY="50.0" text="Nom" textFill="#196ba1">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Label>
       <TextField fx:id="nom" layoutX="305.0" layoutY="50.0" prefHeight="30.0" prefWidth="232.0" promptText="entrer le nom">
@@ -21,14 +22,14 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Label layoutX="71.0" layoutY="85.0" text="Prenom">
+      <Label layoutX="71.0" layoutY="85.0" text="Prenom" textFill="#196ba1">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="69.0" layoutY="123.0" text="Numero de telephone">
+      <Label layoutX="69.0" layoutY="123.0" text="Numero de telephone" textFill="#196ba1">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Label>
       <TextField fx:id="prenom" layoutX="305.0" layoutY="84.0" prefHeight="31.0" prefWidth="232.0" promptText="entrer le prenom">
@@ -41,12 +42,12 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Label layoutX="69.0" layoutY="162.0" text="Etudiant">
+      <Label layoutX="69.0" layoutY="162.0" text="Etudiant" textFill="#196ba1">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Label>
-      <RadioButton fx:id="ouietud" layoutX="305.0" layoutY="168.0" mnemonicParsing="false" text="Oui">
+      <RadioButton fx:id="ouietud" layoutX="305.0" layoutY="168.0" mnemonicParsing="false" text="Oui" textFill="#12668d">
          <toggleGroup>
             <ToggleGroup fx:id="etudiant" />
          </toggleGroup>
@@ -54,14 +55,14 @@
             <Font size="15.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="nonetud" layoutX="402.0" layoutY="168.0" mnemonicParsing="false" text="Non" toggleGroup="$etudiant">
+      <RadioButton fx:id="nonetud" layoutX="402.0" layoutY="168.0" mnemonicParsing="false" text="Non" textFill="#12668d" toggleGroup="$etudiant">
          <font>
             <Font size="15.0" />
          </font>
       </RadioButton>
-      <Label layoutX="69.0" layoutY="209.0" text="Adresses">
+      <Label layoutX="69.0" layoutY="209.0" text="Adresses" textFill="#196ba1">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Label>
       <TextField fx:id="adresse" layoutX="305.0" layoutY="208.0" prefHeight="31.0" prefWidth="232.0" promptText="adresse1,adresse2,adresse3...">
@@ -69,17 +70,17 @@
             <Font size="13.0" />
          </font>
       </TextField>
-      <Button fx:id="ins" layoutX="445.0" layoutY="280.0" mnemonicParsing="false" onAction="#inscrireInscriptionClique" text="Inscrire">
+      <Button fx:id="ins" layoutX="160.0" layoutY="282.0" mnemonicParsing="false" onAction="#inscrireInscriptionClique" prefHeight="30.0" prefWidth="177.0" style="-fx-background-color: #1dd52f;" text="Inscrire" textFill="WHITE">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="retins" layoutX="305.0" layoutY="280.0" mnemonicParsing="false" onAction="#retourInscriptionClique" text="Retour">
+      <Button fx:id="retins" layoutX="359.0" layoutY="285.0" mnemonicParsing="false" onAction="#retourInscriptionClique" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: red;" text="Retour" textFill="#f5f4f4">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Button>
-      <Label layoutX="305.0" layoutY="232.0" prefHeight="30.0" prefWidth="232.0" text="Mettre virgule entre les adresses">
+      <Label layoutX="305.0" layoutY="232.0" prefHeight="30.0" prefWidth="232.0">
          <font>
             <Font size="13.0" />
          </font>
@@ -89,5 +90,15 @@
             <Font size="13.0" />
          </font>
       </Label>
+      <ImageView fitHeight="68.0" fitWidth="80.0" layoutX="22.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="574.0" layoutX="492.0" layoutY="321.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/7.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

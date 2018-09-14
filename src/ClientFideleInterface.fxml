@@ -2,31 +2,37 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientFideleInterface">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientFideleInterface">
    <children>
-      <Button fx:id="cmdclientfidel" layoutX="210.0" layoutY="106.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="179.0" text="Commander">
+      <Button fx:id="cmdclientfidel" layoutX="354.0" layoutY="151.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="195.0" style="-fx-background-color: #0a6684;" text="Commander" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="modifadress" layoutX="210.0" layoutY="186.0" mnemonicParsing="false" onAction="#modifierAdresseClientFideleClique" prefHeight="66.0" prefWidth="179.0" text="Modifier les adresses">
+      <Button fx:id="modifadress" layoutX="353.0" layoutY="226.0" mnemonicParsing="false" onAction="#modifierAdresseClientFideleClique" prefHeight="32.0" prefWidth="195.0" style="-fx-background-color: #0a6684;" text="Modifier les adresses" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="retour" layoutX="210.0" layoutY="267.0" mnemonicParsing="false" onAction="#retourClientFideleClique" prefHeight="66.0" prefWidth="179.0" text="Retoure">
+      <Button fx:id="retour" layoutX="472.0" layoutY="347.0" mnemonicParsing="false" onAction="#retourClientFideleClique" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #0a6684;" text="Retour">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Label layoutX="14.0" layoutY="37.0" opacity="0.79" text="Bienvenue Client Fidele quevoulez vous faire">
+      <Label layoutX="229.0" layoutY="37.0" opacity="0.79" prefHeight="30.0" prefWidth="286.0" text="Client Fidele " textAlignment="CENTER" textFill="#154c7c">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
+      <ImageView fitHeight="248.0" fitWidth="233.0" layoutX="59.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/fidele.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

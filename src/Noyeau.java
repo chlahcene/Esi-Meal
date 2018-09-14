@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 import classes.*;
 
 public class Noyeau implements Initializable {
-    static Restaurant res = Init.initRestaurant();
+    static Restaurant res = new Restaurant(40,6);
     static Boolean utilfid=false ;
 
     @Override
