@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="Bienvenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Noyeau">
+   <children>
+      <AnchorPane mouseTransparent="true" prefHeight="126.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="text" alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="41.0" layoutY="14.0" opacity="0.72" prefHeight="98.0" prefWidth="518.0" scaleShape="false" text="Bienvenu à ESIMeal">
+               <font>
+                  <Font size="52.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="276.0" prefWidth="600.0">
+         <children>
+            <Button id="btnQuit" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" layoutX="203.0" layoutY="207.0" lineSpacing="0.5" mnemonicParsing="false" onAction="#fermer" opacity="0.92" prefHeight="54.0" prefWidth="175.0" text="Quitter" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button id="btnCli" fx:id="client" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="203.0" layoutY="71.0" lineSpacing="0.5" mnemonicParsing="false" onAction="#clientClique" opacity="0.92" prefHeight="54.0" prefWidth="175.0" text="Client" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button id="btnGer" fx:id="gerant" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="203.0" layoutY="7.0" lineSpacing="0.5" mnemonicParsing="false" onAction="#gerantClique" opacity="0.92" prefHeight="54.0" prefWidth="175.0" text="Gérant" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button id="btnCli" fx:id="clientf" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="203.0" layoutY="138.0" lineSpacing="0.5" mnemonicParsing="false" onAction="#clientFideleClique" opacity="0.92" prefHeight="0.0" prefWidth="175.0" text="Client Fidele" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</VBox>
